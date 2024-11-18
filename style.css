@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=WindSong:wght@400;500&display=swap');
 
+/*thx to Lindsay Moe for the bee picture*/
 
+
+                                             /*REINITIALISATION*/
+* {
+margin: 0;
+padding: 0;
+
+}
+
+                                                 /*HEADER*/
 
 header {
     padding: 20px;
@@ -16,6 +26,17 @@ header {
    font-weight: 400;
    font-style: normal;
 }
+
+header li {
+    border: solid rgb(206, 23, 23) 2px;
+    display: flex;
+    list-style-type: none;
+        text-decoration: none;
+       text-align: center;
+    
+    
+    
+    }
     
 nav {
         diplay: grid;
@@ -31,10 +52,10 @@ nav {
     margin: auto;
     }
     
-
+                                            /*A S I D E */
 
     aside {margin-top: 50px;
-        border-color: black 2px; 
+        border-color: solid black 2px; 
         flex-direction: column;
         min-height: 75vh;
         width: 20vh;
@@ -110,16 +131,7 @@ footer {
 
 
 
-header li {
-border: solid rgb(206, 23, 23) 2px;
-display: flex;
-list-style-type: none;
-    text-decoration: none;
-   text-align: center;
 
-
-
-}
 
     
 a {text-decoration: none;
@@ -136,7 +148,7 @@ text-align: center;}
 
     form {
         display: grid; 
-        gta grid-tepmplate-area: (on donne des noms aux cases et leur taille)
+       grid-tepmplate-area:
         "name name pers"
         "email email pers"
         "mess mess mess"
