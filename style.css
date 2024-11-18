@@ -1,192 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=WindSong:wght@400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*utile*/
+
+
 /*thx to Lindsay Moe for the bee picture*/
 /*thx to Yana Hurska for the music picture*/
 
-                                             /*REINITIALISATION*/
+/*REINITIALISATION*/
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
-                                            /*B O D Y PARAGRAPHES  ET T I T R E S*/
+
+/*B O D Y PARAGRAPHES  ET T I T R E S*/
 
 body {
-background-image: url(https://img.freepik.com/photos-gratuite/north-beach-ocean-nazare-portugal_1268-14126.jpg?t=st=1731943748~exp=1731947348~hmac=28b5b104f2d60d81d8fe941d11aa873706567e69e70d76fcb2dbcd3e159e9518&w=740);
-width : 100%; 
-background-attachment: fixed;
-background-size: cover;
+    background-image: url(https://img.freepik.com/photos-gratuite/north-beach-ocean-nazare-portugal_1268-14126.jpg?t=st=1731943748~exp=1731947348~hmac=28b5b104f2d60d81d8fe941d11aa873706567e69e70d76fcb2dbcd3e159e9518&w=740);
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
 
-   text-align: center; 
+    text-align: center;
 
 }
 
 h2 {
-margin-left: 175px;
-padding: 10px;
+    margin-left: 175px;
+    padding: 10px;
 }
 
 h3 {
     margin-left: 175px;
-padding: 10px;
+    padding: 10px;
 }
+
 h4 {
-border: solid 3px white;
+    border: solid 3px white;
 
 }
 
-p {margin-left: 175px;
-text-align: justify;}
+p {
+    margin-left: 175px;
+    text-align: justify;
+}
 
-                                                    /*I M A G E S*/
+/*I M A G E S*/
 
 .images {
-align-items: flex-end;
-width: 500px;
-height:300px; 
-border: black solid 2px; 
-border-radius: 15px; 
-/*pb ça ne redimensionne pas, mais j'avais visé le p au lieu de img*/
--webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 28px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 28px 5px rgba(0,0,0,0);}
+    align-items: flex-end;
+    width: 500px;
+    height: 300px;
+    border: black solid 2px;
+    border-radius: 15px;
+    /*pb ça ne redimensionne pas, mais j'avais visé le p au lieu de img*/
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 28px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 28px 5px rgba(0, 0, 0, 0);
+}
 
 
-                                                 /*HEADER*/
+/*HEADER*/
 
 header {
     padding: 20px;
     color: white;
-    background: linear-gradient(90deg, rgba(17,114,143,0.53) 18%, rgba(153,227,230,1) 76%);
+    background: linear-gradient(90deg, rgba(17, 114, 143, 0.53) 18%, rgba(153, 227, 230, 1) 76%);
     position: sticky;
     z-index: 1;
     width: 100%;
     top: 0;
     font-size: x-large;
     padding: 20px;
-   font-family: "Alegreya SC", serif;
-   font-weight: 400;
-   font-style: normal;
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header li {
     border: solid wheat 2px;
     display: flex;
     list-style-type: none;
-        text-decoration: none;
-       text-align: center;
-       border-radius: 10px;
-    
-    }
-    
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
 nav {
-        display: grid;
-       flex: 1 1 auto;   
-        }
+    display: grid;
+    flex: 1 1 auto;
+}
 
 .flex {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 5px;
     margin: auto;
-    }
-    
-                                            /*A S I D E */
+}
 
-    aside {margin-top: 50px;
-        border-color: solid black 2px; 
-        flex-direction: column;
-        min-height: 75vh;
-        width: 20vh;
-        position: fixed;
-        padding: 20px;
-        font-family: "Alegreya SC", serif;
-        font-weight: 500;
-        font-style: normal;
-        top: 120px;
-    color: white;}
+/*A S I D E */
+
+aside {
+    margin-top: 50px;
+    border-color: solid black 2px;
+    flex-direction: column;
+    min-height: 75vh;
+    width: 20vh;
+    position: fixed;
+    padding: 20px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    top: 120px;
+    color: white;
+}
 
 aside li {
 
-list-style-type: none;
-position: relative;
-z-index: 5;
-margin: auto;
-padding: 10px;
+    list-style-type: none;
+    position: relative;
+    z-index: 5;
+    margin: auto;
+    padding: 10px;
 }
 
-aside a{
+aside a {
     text-decoration: none;
     color: white;
 }
 
 .flexaside {
-background-color: rgba(17, 114, 143, 0.594);
+    background-color: rgba(17, 114, 143, 0.594);
     max-width: 20uv;
     flex-direction: column;
     padding: 10px;
-    display:flex;
+    display: flex;
     backdrop-filter: blur (10);
     border-radius: 10px;
-   text-align: center;
+    text-align: center;
 
 }
+
 .column {
 
     flex-direction: column;
     max-width: 10%;
-  align-content: flex-start;
-  padding: 20px; 
+    align-content: flex-start;
+    padding: 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 35% 65%; 
+    grid-template-columns: 35% 65%;
 
-} 
+}
 
-                /* BOUTON NEON PRIS SUR HGWEBSTUDIO
+/* BOUTON NEON PRIS SUR HGWEBSTUDIO
                 https://www.hgwebstudio.com/neon-button-with-css-hover-effects/
                 */
 
 
-                .neon-btn {
-                    position: relative;
-                    padding: 20px 30px;
-                    background: transparent;
-                    border: 3px solid #f3eaff;
-                    border-radius: 50px;
-                    font-family: "Nunito Sans", sans-serif;
-                    font-size: 16px;
-                    text-decoration: none;
-                    color: #fff;
-                    box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
-                  }
-                  
-                  .neon-btn::before {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    border-radius: 50px;
-                    transition: all 200ms ease-in-out;
-                  }
-                  
-                  .neon-btn:hover::before {
-                    top: -9px;
-                    left: -9px;
-                    width: calc(100% + 16px);
-                    height: calc(100% + 16px);
-                    border: 1px solid #f3eaff;
-                    box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
-                  }
-                  
-                  
+.neon-btn {
+    position: relative;
+    padding: 20px 30px;
+    background: transparent;
+    border: 3px solid #f3eaff;
+    border-radius: 50px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
+}
+
+.neon-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out;
+}
+
+.neon-btn:hover::before {
+    top: -9px;
+    left: -9px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    border: 1px solid #f3eaff;
+    box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
+}
+
+
 /*vérif*/
 
 
@@ -214,8 +226,8 @@ font-family: "Alegreya SC", serif;
 
 footer {
 
-    width: 100%; 
-    height: 10%; 
+    width: 100%;
+    height: 20%;
     background-color: bisque;
 
 }
@@ -224,10 +236,12 @@ footer {
 
 
 
-    
-a {text-decoration: none;
-color: black;
-text-align: center;}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
 
 .btn {
     background-color: #B9625D;
@@ -235,27 +249,48 @@ text-align: center;}
     border-radius: 15px;
     color: aliceblue;
     padding: 15px 55px;
-    font-size: 1.5rem;}
+    font-size: 1.5rem;
+}
 
-    form {
-        display: grid; 
-       grid-tepmplate-area:
+form {
+    display: grid;
+        grid-template-areas:
         "name name pers"
         "email email pers"
         "mess mess mess"
         "date hour btn";
-        gap:5px; 
-        }
-        
-        #name {grid-area: name;
-        }
-        #number {grid-area: pers;}
-        #email {grid-area: email;}
-        #message {grid-area: mess;}
-        
+    gap: 5px;
+}
+
+#name {
+    grid-area: name;
+}
+
+#number {
+    grid-area: pers;
+}
+
+#email {
+    grid-area: email;
+}
+
+#message {
+    grid-area: mess;
+}
+
 /*
 font-family: "Alegreya SC", serif;
    font-weight: 600;
    font-style: normal;
    justify-content: space-evenly;*/
 
+.relative{
+    position: relative;
+}
+
+.relative a{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
