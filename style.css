@@ -12,7 +12,10 @@ padding: 0;
                                             /*B O D Y PARAGRAPHES  ET T I T R E S*/
 
 body {
-   
+background-image: url(https://img.freepik.com/photos-gratuite/north-beach-ocean-nazare-portugal_1268-14126.jpg?t=st=1731943748~exp=1731947348~hmac=28b5b104f2d60d81d8fe941d11aa873706567e69e70d76fcb2dbcd3e159e9518&w=740);
+width : 100%; 
+background-attachment: fixed;
+background-size: cover;
 }
 
 h1 {
@@ -47,7 +50,8 @@ height:300px;
 border: black solid 2px; 
 border-radius: 15px; 
 /*pb ça ne redimensionne pas, mais j'avais visé le p au lieu de img*/
-}
+-webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 28px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 28px 5px rgba(0,0,0,0);}
 
 
                                                  /*HEADER*/
@@ -55,7 +59,7 @@ border-radius: 15px;
 header {
     padding: 20px;
     color: white;
-    background-color: teal;
+    background: linear-gradient(90deg, rgba(17,114,143,0.53) 18%, rgba(153,227,230,1) 76%);
     position: sticky;
     z-index: 1;
     width: 100%;
@@ -102,7 +106,7 @@ nav {
         font-family: "Alegreya SC", serif;
         font-weight: 500;
         font-style: normal;
-        top: 80px;
+        top: 120px;
     color: white;}
 
 aside li {
@@ -142,7 +146,48 @@ background-color: rgba(17, 114, 143, 0.594);
     display: grid;
     grid-template-columns: 35% 65%; 
 
-} /*vérif*/
+} 
+
+                /* BOUTON NEON PRIS SUR HGWEBSTUDIO
+                https://www.hgwebstudio.com/neon-button-with-css-hover-effects/
+                */
+
+
+                .neon-btn {
+                    position: relative;
+                    padding: 20px 30px;
+                    background: transparent;
+                    border: 3px solid #f3eaff;
+                    border-radius: 50px;
+                    font-family: "Nunito Sans", sans-serif;
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: #fff;
+                    box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
+                  }
+                  
+                  .neon-btn::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50px;
+                    transition: all 200ms ease-in-out;
+                  }
+                  
+                  .neon-btn:hover::before {
+                    top: -9px;
+                    left: -9px;
+                    width: calc(100% + 16px);
+                    height: calc(100% + 16px);
+                    border: 1px solid #f3eaff;
+                    box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
+                  }
+                  
+                  
+/*vérif*/
 
 
 
