@@ -11,10 +11,10 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-size: x-large;
 }
 
-/*B O D Y PARAGRAPHES  ET T I T R E S*/
+/*B O D Y PARAGRAPHES T I T R E S ET A*/
 
 body {
     background-image: url(https://img.freepik.com/photos-gratuite/north-beach-ocean-nazare-portugal_1268-14126.jpg?t=st=1731943748~exp=1731947348~hmac=28b5b104f2d60d81d8fe941d11aa873706567e69e70d76fcb2dbcd3e159e9518&w=740);
@@ -30,12 +30,20 @@ h1 {
 }
 
 h2 {
-    margin-left: 175px;
+
     padding: 10px;
+    text-align: center;
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
+    font-size: xx-large;
+    padding: 50px;
+    color: teal;
 }
 
 h3 {
-    margin-left: 175px;
+   
     padding: 10px;
 }
 
@@ -45,8 +53,15 @@ h4 {
 }
 
 p {
-    margin-left: 175px;
+
     text-align: justify;
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 /*I M A G E S*/
@@ -66,6 +81,7 @@ p {
 /*HEADER*/
 
 header {
+
     padding: 20px;
     color: white;
     background: linear-gradient(90deg, rgba(17, 114, 143, 0.53) 18%, rgba(153, 227, 230, 1) 76%);
@@ -76,8 +92,9 @@ header {
     font-size: x-large;
     padding: 20px;
     font-family: "Alegreya SC", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
+    justify-content: space-between;
 }
 
 header li {
@@ -87,6 +104,8 @@ header li {
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
+    padding: 15px;
+ 
 
 }
 
@@ -94,6 +113,38 @@ nav {
     display: grid;
     flex: 1 1 auto;
 }
+
+/*CONTAINER FLEX ET GRID(attention à l'incompatibilité entre flex et grid....*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 200px;
+}
+
+.textContainer {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.imageContainer {
+    position: relative;
+    flex: 1;
+    display: inline-block;
+}
+
+/*j'ajoute ici une séparation afin que mon aside n'empiète pas, mais cela pose des problèmes, sachant que j'ai aussi ajouter 
+des left margin un peu pourtout pour régler ce pb*/
+
+.mainContent {
+
+    margin-left: 200px;
+    padding: 20px;
+}
+/* ca a empiré les choses !, mais il faut bien enlever mes margin left 175px, c pas pro. résultat mes lien "à découvrir" sont sortis des images...*/
+
+/**/
 
 .flex {
     display: flex;
@@ -103,20 +154,30 @@ nav {
     margin: auto;
 }
 
-/*A S I D E */
+/*A S I D E ET POSITIONS*/
+
+/*@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }*/
 
 aside {
-    margin-top: 50px;
-    border-color: solid black 2px;
-    flex-direction: column;
-    min-height: 75vh;
-    width: 20vh;
     position: fixed;
-    padding: 20px;
+    top: 165px;
+    flex-direction: column;
+    
+    width: 150px;
+    padding: 30px;
+    
+    min-height: 75vh;
+    /*width: 20vh;*/
+   
     font-family: "Alegreya SC", serif;
     font-weight: 500;
     font-style: normal;
-    top: 120px;
+   
     color: white;
 }
 
@@ -146,6 +207,8 @@ aside a {
 
 }
 
+/*
+
 .column {
 
     flex-direction: column;
@@ -158,13 +221,54 @@ aside a {
     display: grid;
     grid-template-columns: 35% 65%;
 
+}*/
+
+
+
+
+.relative {
+    position: relative;
 }
+
+.relative a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* BOUTON NEON PRIS SUR HGWEBSTUDIO
                 https://www.hgwebstudio.com/neon-button-with-css-hover-effects/
                 */
 
+/* .btn {
+                    background-color: #B9625D;
+                    border: 3px;
+                    border-radius: 15px;
+                    color: aliceblue;
+                    padding: 15px 55px;
+                    font-size: 1.5rem;
+                } */
 
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*
 .neon-btn {
     position: relative;
     padding: 20px 30px;
@@ -197,14 +301,7 @@ aside a {
     border: 1px solid #f3eaff;
     box-shadow: 0 0 7px 0 #9013fe, 0 0 5px 2px #d64eff, inset 0 0 7px 0 #9013fe, inset 0 0 5px 1px #d64eff;
 }
-
-
-/*vérif*/
-
-
-
-/* vérification */
-
+*/
 
 /*
 header {
@@ -237,20 +334,10 @@ footer {
 
 
 
-a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
 
-.btn {
-    background-color: #B9625D;
-    border: 3px;
-    border-radius: 15px;
-    color: aliceblue;
-    padding: 15px 55px;
-    font-size: 1.5rem;
-}
+/*
+
+
 
 form {
     display: grid;
@@ -283,14 +370,3 @@ font-family: "Alegreya SC", serif;
    font-weight: 600;
    font-style: normal;
    justify-content: space-evenly;*/
-
-.relative{
-    position: relative;
-}
-
-.relative a{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
