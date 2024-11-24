@@ -132,6 +132,8 @@ nav {
     position: relative;
     flex: 1;
     display: inline-block;
+    width: 100%;
+    height: auto;
 }
 
 /*j'ajoute ici une séparation afin que mon aside n'empiète pas, mais cela pose des problèmes, sachant que j'ai aussi ajouter 
@@ -224,7 +226,7 @@ aside a {
 }*/
 
 
-
+/*
 
 .relative {
     position: relative;
